@@ -78,9 +78,25 @@ body
     background-color: green;
 }
 
+hr
+{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .salary-values-container
 {
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+.salary-values-box
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    color: black;
 }

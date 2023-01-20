@@ -1,0 +1,32 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family:'Lato';
+}
+body
+{
+    background-color: rgb(25, 26, 29);
+    height: 100vh;
+    cursor: none;
+}
+#trailer
+{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 20px;
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 100ms ease;
+}
+body:hover > #trailer
+{
+    opacity: 1;
+}

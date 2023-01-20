@@ -55,7 +55,7 @@ function Source(on,row,col)
     grid[row][col].state += (on)?1:-1;
     RefreshCell(row,col);
 
-    for(let dist = 1 ; dist < 8 ; dist ++)
+    for(let dist = 1 ; dist < ((rows>cols)?rows:cols) ; dist ++)
     {
         for(let dir = 0 ; dir < dirs.length ; dir++)
         {

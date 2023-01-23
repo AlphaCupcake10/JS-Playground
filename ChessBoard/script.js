@@ -3,8 +3,6 @@ const dirs = [[1,1],[-1,1],[-1,-1],[1,-1]];
 // const dirs = [[1,1],[-1,1],[-1,-1],[1,-1],[1,0],[-1,0],[0,1],[0,-1]];
 // const dirs = [[1,0],[-1,0],[0,1],[0,-1]];
 
-let newRow = row + dirs[0][0];//row + 1
-let newCol = col + dirs[0][1];//col + 1
 
 const rows = 8;
 const cols = 8;

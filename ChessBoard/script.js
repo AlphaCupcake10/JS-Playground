@@ -45,9 +45,9 @@ function RefreshCell(row,col)
 {
     let cell = grid[row][col];
 
-    if(cell.state == 0 && cell.classList.contains("highlight"))
+    if(cell.state == 0)
         cell.classList.remove("highlight");
-    if(cell.state > 0 && !cell.classList.contains("highlight"))
+    if(cell.state > 0)
         cell.classList.add("highlight");
 }
 
@@ -71,7 +71,9 @@ function Source(on,row,col)
                 continue;
             }
             grid[newRow][newCol].state += (on)?1:-1;
-            RefreshCell(newRow,newCol);
+            setTimeout(() => {
+                RefreshCell(newRow,newCol);
+            }, 100*(dist+dir));
         }
     }
     
